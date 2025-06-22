@@ -7,7 +7,7 @@ dotenv.config();
 
 const app = express();
 
-// Allow only your GitHub Pages domain to access the proxy
+// 🔐 Enable CORS BEFORE any routes
 app.use(cors({
   origin: 'https://andrewpoore.github.io'
 }));
